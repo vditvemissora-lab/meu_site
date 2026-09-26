@@ -1,69 +1,150 @@
-/* Estilos dedicados para as páginas internas de serviço */
-body.pagina-servico-detalhe {
-    background-color: #0b0f19;
-    color: #f3f4f6;
-    font-family: system-ui, -apple-system, sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VM Conecta | Infraestrutura de Domínio & Core Avançado</title>
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="description" content="Infraestrutura de Domínio Mercadológico, Otimização Algorítmica e Blindagem Digital de Alta Performance.">
+</head>
+<body class="body-sistema-central">
 
-.container-detalhe {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 40px;
-    max-width: 600px;
-    width: 100%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    text-align: left;
-}
+    <!-- Header de Telemetria e Status do Sistema -->
+    <header class="header-principal-avancado">
+        <div class="logo-cluster">
+            <h1 class="logo-titulo">VM CONECTA</h1>
+            <span class="badge-core">CORE // v4.2.0-PROD</span>
+        </div>
+        <div class="telemetria-container">
+            <div class="telemetria-item-status">
+                <span class="status-node online"></span>
+                <span class="texto-telemetria">CLUSTER: ATIVO</span>
+            </div>
+            <span class="divisor-pipe">|</span>
+            <span class="latencia-tag">LATÊNCIA: 12ms</span>
+            <span class="divisor-pipe">|</span>
+            <span class="seguranca-tag">ENCRIPTAÇÃO: SHA-512</span>
+        </div>
+    </header>
 
-.icone-detalhe {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
+    <!-- Main Container com Grid de Alta Densidade -->
+    <main class="main-container-avancado" id="secao-catalogo">
+        
+        <!-- Bloco Hero de Posicionamento Estratégico -->
+        <section class="hero-section-matrix">
+            <div class="hero-badge">PROTOCOLO DE ACELERAÇÃO COMERCIAL // 2026</div>
+            <h2>Infraestrutura de Domínio Mercadológico</h2>
+            <p>Transformamos negócios locais invisíveis em potências de faturamento previsível através de otimização algorítmica de catálogos, blindagem patrimonial digital e posicionamento territorial avançado de alta conversão.</p>
+            <div class="hero-metricas-grid">
+                <div class="h-metrica-card">
+                    <span class="hm-valor">99.9%</span>
+                    <span class="hm-legenda">Uptime de Indexação</span>
+                </div>
+                <div class="h-metrica-card">
+                    <span class="hm-valor">3.4x</span>
+                    <span class="hm-legenda">Aceleração Média</span>
+                </div>
+                <div class="h-metrica-card">
+                    <span class="hm-valor">24/7</span>
+                    <span class="hm-legenda">Blindagem Ativa</span>
+                </div>
+            </div>
+        </section>
 
-.container-detalhe h1 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #ffffff;
-}
+        <!-- Filtros e Painel de Controle Rápido -->
+        <div class="painel-controle-catalogo">
+            <div class="contador-protocolos">PROTOCOLS_LOADED: <span class="destaque-num">03</span></div>
+            <div class="busca-wrapper">
+                <input type="text" id="filtro-cards" placeholder="Varredura por solução ou protocolo..." class="input-busca-matriz">
+            </div>
+        </div>
 
-.descricao-detalhe {
-    font-size: 1rem;
-    color: #9ca3af;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
+        <!-- Grade de Produtos / Serviços (Grid Principal) -->
+        <div class="grid-produtos-index" id="lista-cards-index">
+            
+            <!-- CARD 1: Raio-X -->
+            <div class="card-catalogo-index card-glow" data-nome="Raio-X e Diagnóstico Executivo de Perfil">
+                <div class="card-topo-cluster">
+                    <div class="card-topo-icone">🔍</div>
+                    <span class="tag-id">PRT-01</span>
+                </div>
+                <h3>Raio-X e Diagnóstico Executivo de Perfil</h3>
+                <p>Auditoria profunda de vulnerabilidades digitais, análise de tráfego orgânico e falhas críticas de indexação no comércio local com relatório preditivo detalhado.</p>
+                <div class="card-metrica-bloco">
+                    <div class="metrica-item">
+                        <span class="label-metrica">Duração</span>
+                        <span class="val-metrica">24 Horas</span>
+                    </div>
+                    <div class="metrica-item">
+                        <span class="label-metrica">Complexidade</span>
+                        <span class="val-metrica">Nível 1</span>
+                    </div>
+                </div>
+                <div class="card-rodape-index">
+                    <span class="preco-index">R$ 50,00</span>
+                    <a href="raio-x.html" class="btn-acao-index">Abrir Página →</a>
+                </div>
+            </div>
 
-.rodape-detalhe {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
-}
+            <!-- CARD 2: Operação -->
+            <div class="card-catalogo-index card-glow" data-nome="Operação e Melhoria Otimização Completa">
+                <div class="card-topo-cluster">
+                    <div class="card-topo-icone">⚙️</div>
+                    <span class="tag-id">PRT-02</span>
+                </div>
+                <h3>Operação e Melhoria (Otimização Completa)</h3>
+                <p>Reestruturação cibernética, calibração algorítmica de catálogos e reconfiguração estrutural profunda para máxima atração de clientes e escala de vendas.</p>
+                <div class="card-metrica-bloco">
+                    <div class="metrica-item">
+                        <span class="label-metrica">Duração</span>
+                        <span class="val-metrica">7 Dias úteis</span>
+                    </div>
+                    <div class="metrica-item">
+                        <span class="label-metrica">Complexidade</span>
+                        <span class="val-metrica">Nível 2</span>
+                    </div>
+                </div>
+                <div class="card-rodape-index">
+                    <span class="preco-index">R$ 158,00</span>
+                    <a href="operacao.html" class="btn-acao-index">Abrir Página →</a>
+                </div>
+            </div>
 
-.preco-detalhe {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #38bdf8;
-}
+            <!-- CARD 3: Manutenção -->
+            <div class="card-catalogo-index card-glow" data-nome="Manutenção e Suporte Contínuo (Mensal)">
+                <div class="card-topo-cluster">
+                    <div class="card-topo-icone">🛡️</div>
+                    <span class="tag-id">PRT-03</span>
+                </div>
+                <h3>Manutenção e Suporte Contínuo (Mensal)</h3>
+                <p>Blindagem patrimonial digital contínua, monitoramento ativo de reputação, varredura de instabilidades e gestão estratégica mensal dedicada.</p>
+                <div class="card-metrica-bloco">
+                    <div class="metrica-item">
+                        <span class="label-metrica">Frequência</span>
+                        <span class="val-metrica">Contínuo</span>
+                    </div>
+                    <div class="metrica-item">
+                        <span class="label-metrica">Suporte</span>
+                        <span class="val-metrica">Prioritário</span>
+                    </div>
+                </div>
+                <div class="card-rodape-index">
+                    <span class="preco-index">R$ 70,00 <small>/mês</small></span>
+                    <a href="manutencao.html" class="btn-acao-index">Abrir Página →</a>
+                </div>
+            </div>
 
-.btn-voltar {
-    background: #2563eb;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.2s;
-}
+        </div>
+    </main>
 
-.btn-voltar:hover {
-    background: #1d4ed8;
-}
+    <!-- Rodapé de Sistema Avançado -->
+    <footer class="footer-sistema">
+        <div class="footer-conteudo">
+            <p>VM CONECTA INFRAESTRUTURA DIGITAL &copy; 2026 // TODOS OS DIREITOS RESERVADOS</p>
+            <p class="sub-footer">Sistemas operando sob protocolos de alta redundância, telemetria avançada e blindagem contra falhas.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
