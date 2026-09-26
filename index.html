@@ -1,298 +1,50 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VM Conecta | Infraestrutura de Domínio Comercial e Inteligência Local</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>VM Conecta | Infraestrutura de Domínio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-
-    <canvas id="neural-canvas"></canvas>
-
-    <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
-    <a href="https://wa.me/5531983130634?text=Olá,%20acessei%20o%20sistema%20da%20VM%20Conecta%20e%20quero%20escalar%20meu%20comércio." target="_blank" class="whatsapp-flutuante" title="Linha Direta de Atendimento">
-        <span class="pulse-ring"></span>
-        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-    </a>
-
-    <header class="site-header">
-        <div class="top-nav-bar">
-            <div class="logo-container">
-                <span class="logo-status-dot"></span>
-                <span class="logo-text">VM CONECTA <small>CORE // 2026</small></span>
-            </div>
-            
-            <div class="nav-actions">
-                <div class="telemetria-badge">LATÊNCIA: <span id="ping-status">12ms</span></div>
-                <div class="dropdown-menu-container">
-                    <button class="btn-tres-pontinhos" onclick="toggleMenu()" title="Painel de Controle">
-                        <span></span><span></span><span></span>
-                    </button>
-                    <div id="menuDropdown" class="dropdown-content">
-                        <a onclick="irParaCatalogo()">⚡ Catálogo de Soluções</a>
-                        <a onclick="abrirModal('modalEstrategia')">🎯 Protocolo de Domínio Local</a>
-                        <a onclick="abrirModal('modalQuemSomos')">🏛️ Engenharia Institucional</a>
-                        <a onclick="abrirModal('modalAjuda')">📡 Suporte Tático</a>
-                        <a href="https://wa.me/5531983130634" target="_blank">💬 Canal Direto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="header-container">
-            <div class="badge-topo">INFRAESTRUTURA DE DOMÍNIO MERCADOLÓGICO</div>
-            <h1>Acelerando Pequenos Comerciantes através de Engenharia de Catálogo e Dados</h1>
-            <p>Transformamos negócios locais invisíveis em potências de faturamento previsível através de otimização algorítmica de catálogos e posicionamento territorial.</p>
-        </div>
-    </header>
-
     <main class="main-container" id="secao-catalogo">
-        
-        <section class="painel-filtros">
-            <div class="busca-wrapper">
-                <span class="busca-icone">🔍</span>
-                <input type="text" id="inputBusca" placeholder="Varredura por solução ou protocolo..." onkeyup="filtrarProdutosIndex()">
-            </div>
-        </section>
-
-        <section class="intro-secao">
-            <h2>Soluções de Aceleração Comercial</h2>
-            <p>Clique em qualquer protocolo para abrir a página de vendas detalhada em uma nova aba.</p>
-        </section>
-
-        <!-- GRID DE CARDS COM LINKS PARA PÁGINAS SEPARADAS -->
         <div class="grid-produtos-index" id="lista-cards-index">
-
-            <!-- CARD 1 -->
+            
+            <!-- CARD 1: Raio-X -->
             <div class="card-catalogo-index" data-nome="Raio-X e Diagnóstico Executivo de Perfil">
                 <div class="card-topo-icone">🔍</div>
                 <h3>Raio-X e Diagnóstico Executivo de Perfil</h3>
                 <p>Auditoria profunda de vulnerabilidades digitais e falhas de indexação no comércio local.</p>
                 <div class="card-rodape-index">
                     <span class="preco-index">R$ 50,00</span>
-                    <a href="raio-x.html" target="_blank" class="btn-acao-index">Abrir Página &rarr;</a>
+                    <a href="raio-x.html" target="_blank" class="btn-acao-index">Abrir Página</a>
                 </div>
             </div>
 
-            <!-- CARD 2 -->
+            <!-- CARD 2: Operação -->
             <div class="card-catalogo-index" data-nome="Operação e Melhoria Otimização Completa">
                 <div class="card-topo-icone">⚙️</div>
                 <h3>Operação e Melhoria (Otimização Completa)</h3>
                 <p>Reestruturação cibernética e calibração de catálogos para máxima atração de clientes.</p>
                 <div class="card-rodape-index">
-                    <span class="preco-index">R$ 150,00</span>
-                    <a href="operacao.html" target="_blank" class="btn-acao-index">Abrir Página &rarr;</a>
+                    <span class="preco-index">R$ 158,00</span>
+                    <a href="operacao.html" target="_blank" class="btn-acao-index">Abrir Página</a>
                 </div>
             </div>
 
-            <!-- CARD 3 -->
-            <div class="card-catalogo-index" data-nome="Manutenção e Suporte Contínuo Mensal">
+            <!-- CARD 3: Manutenção -->
+            <div class="card-catalogo-index" data-nome="Manutenção e Suporte Contínuo (Mensal)">
                 <div class="card-topo-icone">🛡️</div>
                 <h3>Manutenção e Suporte Contínuo (Mensal)</h3>
                 <p>Blindagem patrimonial digital, monitoramento de reputação e gestão contínua.</p>
                 <div class="card-rodape-index">
                     <span class="preco-index">R$ 70,00 <small>/mês</small></span>
-                    <a href="manutencao.html" target="_blank" class="btn-acao-index">Abrir Página &rarr;</a>
+                    <a href="manutencao.html" target="_blank" class="btn-acao-index">Abrir Página</a>
                 </div>
             </div>
 
         </div>
     </main>
-
-    <!-- MODAIS DO MENU -->
-    <div id="modalEstrategia" class="modal-overlay">
-        <div class="modal-box">
-            <button class="btn-fechar-modal" onclick="fecharModal('modalEstrategia')">&times;</button>
-            <h2>Protocolo de Domínio Local</h2>
-            <p>Metodologia focada em resgatar pequenos comerciantes da invisibilidade digital, estruturando catálogos limpos, atrativos e altamente persuasivos.</p>
-        </div>
-    </div>
-
-    <div id="modalQuemSomos" class="modal-overlay">
-        <div class="modal-box">
-            <button class="btn-fechar-modal" onclick="fecharModal('modalQuemSomos')">&times;</button>
-            <h2>Engenharia VM Conecta</h2>
-            <p>Unimos tecnologia de ponta e ciência de dados para nivelar o jogo a favor do pequeno lojista regional.</p>
-        </div>
-    </div>
-
-    <div id="modalAjuda" class="modal-overlay">
-        <div class="modal-box">
-            <button class="btn-fechar-modal" onclick="fecharModal('modalAjuda')">&times;</button>
-            <h2>Suporte Tático Especializado</h2>
-            <p>Precisa de suporte personalizado para o seu comércio? Nossa equipe está online.</p>
-            <div style="margin-top: 25px;">
-                <a href="https://wa.me/5531983130634" target="_blank" class="btn-acao" style="background:#00ff88; color:#030507; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Falar com Especialista</a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-col">
-                <strong>VM CONECTA SISTEMAS EXECUTIVOS</strong>
-                <p>Infraestrutura avançada de posicionamento local e conversão para o pequeno comércio.</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 VM Conecta Negócios. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
     <script src="script.js"></script>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VM Conecta | Infraestrutura de Domínio Comercial e Inteligência Local</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <canvas id="neural-canvas"></canvas>
-
-    <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
-    <a href="https://wa.me/5531983130634?text=Olá,%20acessei%20o%20sistema%20da%20VM%20Conecta%20e%20quero%20escalar%20meu%20comércio." target="_blank" class="whatsapp-flutuante" title="Linha Direta de Atendimento">
-        <span class="pulse-ring"></span>
-        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-    </a>
-
-    <header class="site-header">
-        <div class="top-nav-bar">
-            <div class="logo-container">
-                <span class="logo-status-dot"></span>
-                <span class="logo-text">VM CONECTA <small>CORE // 2026</small></span>
-            </div>
-            
-            <div class="nav-actions">
-                <div class="telemetria-badge">LATÊNCIA: <span id="ping-status">12ms</span></div>
-                <div class="dropdown-menu-container">
-                    <button class="btn-tres-pontinhos" onclick="toggleMenu()" title="Painel de Controle">
-                        <span></span><span></span><span></span>
-                    </button>
-                    <div id="menuDropdown" class="dropdown-content">
-                        <a onclick="irParaCatalogo()">⚡ Catálogo de Soluções</a>
-                        <a onclick="abrirModal('modalEstrategia')">🎯 Protocolo de Domínio Local</a>
-                        <a onclick="abrirModal('modalQuemSomos')">🏛️ Engenharia Institucional</a>
-                        <a onclick="abrirModal('modalAjuda')">📡 Suporte Tático</a>
-                        <a href="https://wa.me/5531983130634" target="_blank">💬 Canal Direto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="header-container">
-            <div class="badge-topo">INFRAESTRUTURA DE DOMÍNIO MERCADOLÓGICO</div>
-            <h1>Acelerando Pequenos Comerciantes através de Engenharia de Catálogo e Dados</h1>
-            <p>Transformamos negócios locais invisíveis em potências de faturamento previsível através de otimização algorítmica de catálogos e posicionamento territorial.</p>
-        </div>
-    </header>
-
-    <main class="main-container" id="secao-catalogo">
-        
-        <section class="painel-filtros">
-            <div class="busca-wrapper">
-                <span class="busca-icone">🔍</span>
-                <input type="text" id="inputBusca" placeholder="Varredura por solução ou protocolo..." onkeyup="filtrarProdutosIndex()">
-            </div>
-        </section>
-
-        <section class="intro-secao">
-            <h2>Soluções de Aceleração Comercial</h2>
-            <p>Clique em qualquer protocolo para abrir a página de vendas detalhada em uma nova aba.</p>
-        </section>
-
-        <!-- GRID DE CARDS COM LINKS PARA PÁGINAS SEPARADAS -->
-        <div class="grid-produtos-index" id="lista-cards-index">
-
-            <!-- CARD 1 -->
-            <div class="card-catalogo-index" data-nome="Raio-X e Diagnóstico Executivo de Perfil">
-                <div class="card-topo-icone">🔍</div>
-                <h3>Raio-X e Diagnóstico Executivo de Perfil</h3>
-                <p>Auditoria profunda de vulnerabilidades digitais e falhas de indexação no comércio local.</p>
-                <div class="card-rodape-index">
-                    <span class="preco-index">R$ 50,00</span>
-                    <a href="produto.html?id=raio-x" target="_blank" class="btn-acao-index">Abrir Página &rarr;</a>
-                </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="card-catalogo-index" data-nome="Operação e Melhoria Otimização Completa">
-                <div class="card-topo-icone">⚙️</div>
-                <h3>Operação e Melhoria (Otimização Completa)</h3>
-                <p>Reestruturação cibernética e calibração de catálogos para máxima atração de clientes.</p>
-                <div class="card-rodape-index">
-                    <span class="preco-index">R$ 150,00</span>
-                    <a href="produto.html?id=otimizacao" target="_blank" class="btn-acao-index">Abrir Página &rarr;</a>
-                </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="card-catalogo-index" data-nome="Manutenção e Suporte Contínuo Mensal">
-                <div class="card-topo-icone">🛡️</div>
-                <h3>Manutenção e Suporte Contínuo (Mensal)</h3>
-                <p>Blindagem patrimonial digital, monitoramento de reputação e gestão contínua.</p>
-                <div class="card-rodape-index">
-                    <span class="preco-index">R$ 70,00 <small>/mês</small></span>
-                    <a href="produto.html?id=suporte" target="_blank" class="btn-acao-index">Abrir Página &rarr;</a>
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- MODAIS DO MENU -->
-    <div id="modalEstrategia" class="modal-overlay">
-        <div class="modal-box">
-            <button class="btn-fechar-modal" onclick="fecharModal('modalEstrategia')">&times;</button>
-            <h2>Protocolo de Domínio Local</h2>
-            <p>Metodologia focada em resgatar pequenos comerciantes da invisibilidade digital, estruturando catálogos limpos, atrativos e altamente persuasivos.</p>
-        </div>
-    </div>
-
-    <div id="modalQuemSomos" class="modal-overlay">
-        <div class="modal-box">
-            <button class="btn-fechar-modal" onclick="fecharModal('modalQuemSomos')">&times;</button>
-            <h2>Engenharia VM Conecta</h2>
-            <p>Unimos tecnologia de ponta e ciência de dados para nivelar o jogo a favor do pequeno lojista regional.</p>
-        </div>
-    </div>
-
-    <div id="modalAjuda" class="modal-overlay">
-        <div class="modal-box">
-            <button class="btn-fechar-modal" onclick="fecharModal('modalAjuda')">&times;</button>
-            <h2>Suporte Tático Especializado</h2>
-            <p>Precisa de suporte personalizado para o seu comércio? Nossa equipe está online.</p>
-            <div style="margin-top: 25px;">
-                <a href="https://wa.me/5531983130634" target="_blank" class="btn-acao" style="background:#00ff88; color:#030507; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Falar com Especialista</a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-col">
-                <strong>VM CONECTA SISTEMAS EXECUTIVOS</strong>
-                <p>Infraestrutura avançada de posicionamento local e conversão para o pequeno comércio.</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 VM Conecta Negócios. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
->>>>>>> 66d1a76b2c5fae57c0e3d94dc73cee485ac98c3b
 </html>
